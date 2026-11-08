@@ -2,17 +2,17 @@
 
 Crypto attack primitives and analysis toolkit for CTF players and security researchers. Zero dependencies, stdlib only.
 
-Built for challenges like NSA Codebreakers style pcaps: custom protocols, hidden enrollment keys, obfuscated traffic.
+Built for the NSA Codebreakers style of challenge. Custom protocols, hidden enrollment keys, obfuscated traffic, weird RSA.
 
-## What it does
+## What's in the box
 
-* **Classical ciphers** — caesar bruteforce with english scoring, vigenere, atbash, affine
-* **XOR** — single byte bruteforce, repeating key break via hamming distance keysize guessing
-* **RSA attacks** — Wiener's attack, Hastad broadcast, common modulus, small exponent
-* **Analysis** — shannon entropy, index of coincidence, chi squared english scoring, frequency analysis
-* **Encoding** — layered auto decode for base64, hex, url encoding, with the decode chain reported
-* **Hash ID** — identify hash algorithms by digest length and charset
-* **PCAP** — pure python pcap reader, IPv4/TCP parsing, TCP stream reassembly, payload carving, token hunting
+* **Classical ciphers**. Caesar bruteforce with english scoring, vigenere, atbash, affine.
+* **XOR**. Single-byte bruteforce, repeating-key break via hamming-distance keysize guessing.
+* **RSA**. Wiener's attack, Hastad broadcast, common modulus, small exponent.
+* **Analysis**. Shannon entropy, index of coincidence, chi-squared english scoring, frequency analysis.
+* **Encoding**. Layered auto-decode for base64, hex, url. Reports the decode chain it took.
+* **Hash ID**. Identify hash algorithms by digest length and charset.
+* **PCAP**. Pure Python pcap reader. IPv4/TCP parsing, TCP stream reassembly, payload carving, token hunting.
 
 ## Install
 
@@ -41,7 +41,7 @@ for s in streams:
 
 ## Companion project
 
-**flaghunter** builds on cryptsmith: point it at a challenge file or a pcap and it runs a full battery of attacks automatically and writes you a report.
+**[flaghunter](https://github.com/burrejak22/flaghunter)** sits on top of this. Point it at a challenge file or pcap, it runs the whole attack battery for you and writes up what fell out.
 
 ## License
 
